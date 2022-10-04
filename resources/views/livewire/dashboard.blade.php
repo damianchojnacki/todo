@@ -50,7 +50,7 @@
                 return;
             }
 
-            oldWidth = document.getElementById('expbar').dataset.width.split('%')[0]
+            oldWidth = document.getElementById('expbar').style.width.split('%')[0]
         })
 
         Livewire.hook('message.processed', (message, component) => {
@@ -58,7 +58,7 @@
                 return;
             }
 
-            newWidth = document.getElementById('expbar').dataset.width.split('%')[0]
+            newWidth = document.getElementById('expbar').style.width.split('%')[0]
 
             document.getElementById('expbar').style.width = oldWidth + '%'
 
